@@ -1,0 +1,203 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.carcheck"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:3:5-78
+11-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:3:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:4:5-81
+12-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:4:22-78
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->[:geolocator_android] C:\Projects\CarChecks-Repository-main\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:7:5-77
+13-->[:geolocator_android] C:\Projects\CarChecks-Repository-main\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:5-80
+14-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:22-77
+15
+16    <queries>
+16-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:9:5-15:15
+17        <intent>
+17-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:10:9-14:18
+18            <action android:name="android.intent.action.GET_CONTENT" />
+18-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:11:13-72
+18-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:11:21-69
+19
+20            <data android:mimeType="*/*" />
+20-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:13:13-44
+20-->[:file_picker] C:\Projects\CarChecks-Repository-main\build\file_picker\intermediates\library_manifest\release\AndroidManifest.xml:13:19-41
+21        </intent>
+22        <!-- Needs to be explicitly declared on Android R+ -->
+23        <package android:name="com.google.android.apps.maps" />
+23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+24    </queries> <!-- Include required permissions for Google Maps API to run. -->
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
+25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:22-76
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
+26-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:24:22-64
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+30        android:required="true" />
+30-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+31
+32    <application
+33        android:name="android.app.Application"
+33-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:7:9-42
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.6.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:8:9-43
+36        android:label="carcheck" >
+36-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:6:9-33
+37
+38        <!-- TODO: Add your Google Maps API key here -->
+39        <meta-data
+39-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:11:8-12:69
+40            android:name="com.google.android.geo.API_KEY"
+40-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:11:19-64
+41            android:value="AIzaSyDPjvzVkcwKGrEp9wsmtju0Ko_VT0JKiiY" />
+41-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:12:12-67
+42
+43        <activity
+43-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:14:9-34:20
+44            android:name="com.example.carcheck.MainActivity"
+44-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:15:13-41
+45            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+45-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:19:13-163
+46            android:exported="true"
+46-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:16:13-36
+47            android:hardwareAccelerated="true"
+47-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:20:13-47
+48            android:launchMode="singleTop"
+48-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:17:13-43
+49            android:theme="@style/LaunchTheme"
+49-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:18:13-47
+50            android:windowSoftInputMode="adjustResize" >
+50-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:21:13-55
+51
+52            <!--
+53                 Specifies an Android theme to apply to this Activity as soon as
+54                 the Android process has started. This theme is visible to the user
+55                 while the Flutter UI initializes. After that, this theme continues
+56                 to determine the Window background behind the Flutter UI.
+57            -->
+58            <meta-data
+58-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:26:13-29:17
+59                android:name="io.flutter.embedding.android.NormalTheme"
+59-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:27:15-70
+60                android:resource="@style/NormalTheme" />
+60-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:28:15-52
+61
+62            <intent-filter>
+62-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:30:13-33:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:31:17-68
+63-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:31:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:32:17-76
+65-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:32:27-74
+66            </intent-filter>
+67        </activity>
+68        <!--
+69             Don't delete the meta-data below.
+70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+71        -->
+72        <meta-data
+72-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:37:9-39:33
+73            android:name="flutterEmbedding"
+73-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:38:13-44
+74            android:value="2" />
+74-->C:\Projects\CarChecks-Repository-main\android\app\src\main\AndroidManifest.xml:39:13-30
+75
+76        <service
+76-->[:geolocator_android] C:\Projects\CarChecks-Repository-main\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:10:9-14:56
+77            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+77-->[:geolocator_android] C:\Projects\CarChecks-Repository-main\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-77
+78            android:enabled="true"
+78-->[:geolocator_android] C:\Projects\CarChecks-Repository-main\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:12:13-35
+79            android:exported="false"
+79-->[:geolocator_android] C:\Projects\CarChecks-Repository-main\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:13:13-37
+80            android:foregroundServiceType="location" />
+80-->[:geolocator_android] C:\Projects\CarChecks-Repository-main\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:14:13-53
+81
+82        <provider
+82-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
+83            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+83-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:9:13-82
+84            android:authorities="com.example.carcheck.flutter.image_provider"
+84-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:10:13-74
+85            android:exported="false"
+85-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
+86            android:grantUriPermissions="true" >
+86-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
+87            <meta-data
+87-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:75
+88                android:name="android.support.FILE_PROVIDER_PATHS"
+88-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+89                android:resource="@xml/flutter_image_picker_file_paths" />
+89-->[:image_picker_android] C:\Projects\CarChecks-Repository-main\build\image_picker_android\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
+90        </provider>
+91
+92        <service
+92-->[:location] C:\Projects\CarChecks-Repository-main\build\location\intermediates\library_manifest\release\AndroidManifest.xml:11:9-15:56
+93            android:name="com.lyokone.location.FlutterLocationService"
+93-->[:location] C:\Projects\CarChecks-Repository-main\build\location\intermediates\library_manifest\release\AndroidManifest.xml:12:13-71
+94            android:enabled="true"
+94-->[:location] C:\Projects\CarChecks-Repository-main\build\location\intermediates\library_manifest\release\AndroidManifest.xml:13:13-35
+95            android:exported="false"
+95-->[:location] C:\Projects\CarChecks-Repository-main\build\location\intermediates\library_manifest\release\AndroidManifest.xml:14:13-37
+96            android:foregroundServiceType="location" />
+96-->[:location] C:\Projects\CarChecks-Repository-main\build\location\intermediates\library_manifest\release\AndroidManifest.xml:15:13-53
+97
+98        <uses-library
+98-->[androidx.window:window:1.0.0-beta04] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+99            android:name="androidx.window.extensions"
+99-->[androidx.window:window:1.0.0-beta04] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+100            android:required="false" />
+100-->[androidx.window:window:1.0.0-beta04] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+101        <uses-library
+101-->[androidx.window:window:1.0.0-beta04] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+102            android:name="androidx.window.sidecar"
+102-->[androidx.window:window:1.0.0-beta04] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+103            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+103-->[androidx.window:window:1.0.0-beta04] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+104        <uses-library
+104-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+105            android:name="org.apache.http.legacy"
+105-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+106            android:required="false" />
+106-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7d064776558e2f29807c8a762199a631\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+107
+108        <activity
+108-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+109            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+109-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+110            android:exported="false"
+110-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+112
+113        <meta-data
+113-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+114            android:name="com.google.android.gms.version"
+114-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+115            android:value="@integer/google_play_services_version" />
+115-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+116    </application>
+117
+118</manifest>

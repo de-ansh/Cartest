@@ -1,0 +1,4 @@
+#Wed Feb 01 10:12:46 IST 2023
+base.0=C\:\\Projects\\CarChecks-Repository-main\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
